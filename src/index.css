@@ -1,0 +1,164 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  color: #121212;
+}
+
+input,
+button {
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  background-color: white;
+  line-height: 1.5;
+  margin: 0;
+}
+
+button {
+  color: rgb(96, 187, 223);
+  font-weight: 500;
+}
+
+input:hover,
+button:hover {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+label {
+  display: inline-block;
+  width: 70px;
+}
+
+h2 {
+  display: flex;
+  align-items: flex-starts;
+  gap: 1rem;
+}
+
+.App {
+  padding: 0 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  width: 300px;
+  height: 400px;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+.loginForm p {
+  text-align: center;
+}
+
+.loginForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.second {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 60px auto;
+}
+
+.personList {
+  grid-column: 2 / span 2;
+  grid-row: 1 / span 3;
+}
+
+.notification {
+  grid-column: 2 / span 2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 8px;
+  height: 40px;
+  align-items: center;
+}
+
+.delete-button {
+  color: rgb(243, 76, 76);
+}
+
+.hero {
+  color: rgb(96, 187, 223);
+}
+
+.error {
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 16px;
+  border: 2px solid #d14d72;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fef2f4;
+}
+
+.success {
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 16px;
+  border: 2px solid #9eb384;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #cedebd;
+}
